@@ -1,5 +1,7 @@
 <div class="container py-4">
   <h2 class="mb-4">Upcoming events</h2>
+  <app-add-new-event-modal></app-add-new-event-modal>
+  <button (click)="showEventModel()" class="btn btn-primary mb-4">Create Event</button>
 
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
     @for (event of events; track event.title) {

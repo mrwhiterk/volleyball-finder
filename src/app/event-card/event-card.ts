@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
 import { VolleyballEvent } from '../models/volleyball-event';
+import { AddNewEventModal } from '../add-new-event-modal/add-new-event-modal';
 
 @Component({
   selector: 'app-event-card',
-  imports: [],
+  imports: [AddNewEventModal],
   templateUrl: './event-card.html',
   styleUrl: './event-card.css',
 })
 export class EventCard {
+
+showEventModel() {
+  console.log("event modal")
+}
+
 events: VolleyballEvent[] = [
   {
     id: '1',
